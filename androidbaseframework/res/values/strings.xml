@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_register">RegisterActivity</string>
+
+
+    <string name="app_name">Nasscom GDC</string>
+    <string name="no_data_found_on_iitglc">No data found on Nasscom GDC</string>
+    <string name="no_data_found">No data found</string>
+    <string name="event_date">November 5&#8211;7, Pune, Maharashtra - India.</string>
+
+    <!-- photo edit options dialog texts -->
+    <string name="photo_option_take_new_photo">Take a new picture</string>
+    <string name="photo_option_choose_photo">Choose a picture from phone</string>
+    <string name="photo_option_remove_photo">Remove picture</string>
+    <string name="photo_option_cancel">Cancel</string>
+    <string name="error_opening_camera">Error in opening camera to take the picture.</string>
+    <string name="error_opening_gallery">Error in opening library to select the picture.</string>
+    <string name="error_saving_profile_pic">Error in saving profile picture.</string>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="app_update_message">New version of app is available in Play Store.</string>
+    <string name="app_update_message_part2">To use this feature please update to the latest version of application.</string>
+    <string name="update">Update</string>
+    <string name="later">Later</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="msg_dont_ask_me_again">    Don\'t ask me again</string>
+    <string name="accept">Accept</string>
+    <string name="reject">Reject</string>
+    <string name="decline">Decline</string>
+    <string name="exit">Exit</string>
+    <string name="back">Back</string>
+    <string name="under_implementation">Under Implementation</string>
+    <string name="no_network">Network Not Available</string>
+    <string name="country_code_excluding_plus">+91</string>
+
+    <!-- dialog Strings -->
+    <string name="dialog_header">Meuseum</string>
+    <string name="dialog_title">Rate us on the Play Store</string>
+    <string name="dialog_title_text">If you had a great experience using Nasscom GDC then please take a moment to rate our app on the play store. Don’t forget to leave us a review, your feedback is valuable to us. Thanks for your support.</string>
+    <string name="dialog_no_thanks_btn">No, Thanks</string>
+    <string name="dialog_rate_us_btn">Rate Now</string>
+    <string name="dialog_remind_me_btn">Remind me later</string>
+    <string name="title_activity_add_a_business">Add A Business</string>
+    <string name="connected_facebook_account">Connected Facebook Account</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect_with_google_account">Connect with Google Account</string>
+    <string name="connect_with_facebook_account">Connect with Facebook Account</string>
+    <string name="google_account_connect_msg">We\&apos;ll not import any contacts from your google account or send mails on your behalf.</string>
+    <string name="fb_account_connect_msg">We\&apos;ll not import contacts from your facebook account or send mails on your behalf.</string>
+    <string name="map_driving_mode">Driving</string>
+    <string name="map_walking_mode">Walking</string>
+    <string name="map_comp_details">Company Details</string>
+    <string name="dialog_btn_ok">Allow</string>
+    <string name="dialog_btn_no">Deny</string>
+    <string name="dialog_from_gallery">Choose Image From Gallery</string>
+    <string name="dialog_from_camera">Capture Image From Camera</string>
+    <string name="login">Login</string>
+    <string name="confirm">Confirm</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="loading">Loading...</string>
+    <string name="global_leadership_conference">Global Leadership Conference</string>
+    <string name="register">Register</string>
+    <string name="register_here">Register Here</string>
+    <string name="enter_valid_email">Please enter valid email.</string>
+    <string name="enter_valid_passcode">Please enter the valid passcode which sent on your email. This field should not be empty.</string>
+    <string name="passcode_verification">The code has been sent to your registered email id. Please enter the code to proceed further.</string>
+    <string name="passcode_verification_error">The access code entered is incorrect. Please enter correct access code.</string>
+    <string name="register_text_two">To get maximum benefit from this app, it is advisable that you register on Nasscom GDC website</string>
+    <string name="register_text_three">Please enter the email id used at the time of Nasscom GDC registration.</string>
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="settings">Settings</string>
+    <string name="profile">Profile</string>
+    <string name="buzz">buzz</string>
+    <string name="networking">networking</string>
+    <string name="networking_title">Networking</string>
+    <string name="sponsors_exhibitors">sponsors/exhibitors</string>
+    <string name="speakers">Speakers</string>
+    <string name="connect">Connect</string>
+    <string name="scavenger_hunt">Scavenger Hunt</string>
+    <string name="special_events">special events</string>
+    <string name="program">Program</string>
+    <string name="batch_photo">Batch Photo</string>
+    <string name="breakfast_with_like_minded">Breakfast with like Minded</string>
+    <string name="lunch_with_da">Lunch with DA</string>
+    <string name="connect_with_attendees">Connect with Attendees</string>
+    <string name="preferred"><i>Preferred</i></string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="name">Name</string>
+    <string name="email_id">Email Id</string>
+    <string name="submit">Submit</string>
+    <string name="register_info">If you have already registered at the GLC website please use same email address. If not, please use this email address when you register for Nasscom GDC at http://iit-2015.org/</string>
+    <string name="kellton_ad">Nasscom GDC 2015. Powered by Kellton Tech</string>
+    <string name="enter_code">Enter code</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="error_unknown">Unknown Error occurred.</string>
+    <!--<string name="request_fail">Unable to process the request.</string>-->
+    <string name="request_fail">The Operation couldn\'t be completed.</string>
+
+
+    <string name="error_calendar">you don\'t have any google calendar sync with your phone.</string>
+    <string name="error_internet">The Internet connection appears to be offline.</string>
+    <string name="pleaseWait">Please Wait…</string>
+    <string name="no_events">No Event added!!</string>
+    <string name="no_events_found">No Event Found!!</string>
+    <string name="dummy_events">dummy events</string>
+
+    <!-- Registration String-->
+    <string name="please_enter_first_name">Please Enter First Name</string>
+    <string name="please_enter_last_name">Please Enter Last Name</string>
+    <string name="please_enter_name">Please Enter Name</string>
+    <string name="please_enter_email">Please Enter Email Id</string>
+    <!--<string name="check_user_mail_error">We did not find this email id in GLC database. Please enter correct email id.</string>-->
+    <string name="check_user_mail_error">No data found in Nasscom GDC database, please enter email used to register for Nasscom GDC</string>
+    <string name="or">or</string>
+    <string name="more">More</string>
+
+    <!-- Home Screen-->
+    <string name="date">Date</string>
+    <string name="attendees">Attendees</string>
+    <string name="normal_event">normal</string>
+    <string name="special_event">special</string>
+    <string name="select_calender">Select Calendar</string>
+    <string name="error_in_creating_event">error_in_creating_event</string>
+    <string name="u_don_not_have_calender">You don\'t have any gmail calendar. Please check your calendar setting.</string>
+    <string name="events">Events</string>
+    <string name="special_events_fragment">Special Events</string>
+    <string name="details">Details</string>
+    <string name="panel_q_and_a"><![CDATA[> Panel Q&A]]></string>
+    <string name="panel_qa"><![CDATA[Panel Q&A]]></string>
+
+    <!--Special event detail fragment -->
+    <string name="enroll"><![CDATA[> Enroll]]></string>
+    <string name="withdraw"><![CDATA[> Withdraw]]></string>
+    <string name="enroll_msg">You have successfully enrolled for this event and event details also added to your calendar.</string>
+    <string name="registration_successful">Registration Successful.</string>
+    <string name="withdraw_msg_special">Do you really want to withdraw from  this event. If you withdraw, event will also be removed from your My Event list.</string>
+    <string name="withdraw_msg_my_event_special">Do you really want to delete this event from your My Event list. In this case you will also be withdrawn from this event and event will be removed from your calendar.</string>
+    <string name="withdraw_msg_my_event_normal">Do you really want to delete this event from your My Event list. Event will also be removed from your Calendar?</string>
+    <string name="delete_error">Error in deleting event.</string>
+    <string name="enroll_full">Registration is full for this event.</string>
+    <string name="no_one_registered">No One Registered Yet.</string>
+
+
+    <!--Normal Event Detail Fragment-->
+    <string name="event_added_msg">Event successfully added to the calendar.</string>
+    <string name="normal_event_reg_success_msg">You have successfully registered for event and added to calendar.</string>
+    <string name="event_already_added_msg">Event is already added to calendar.</string>
+    <!--<string name="event_already_registered">Yor are already Registered for this event.</string>-->
+    <string name="event_already_registered">Event is already added to calendar</string>
+    <string name="event_not_added">Problem in adding Event to calendar.</string>
+    <string name="do_you_want_rate_event">Do you want to rate this event.</string>
+    <string name="do_you_want_change_privacy">Do you want to change setting?</string>
+    <string name="event_rated_successfully">Your rating for this event is save successfully.</string>
+    <string name="api_server_error_message">Some error occurs. Try again.</string>
+    <string name="not_able_to_share_on_fb">Not share with facebook.</string>
+
+    <!-- Panel QA Screen -->
+    <string name="qa_count">0/80</string>
+    <string name="ask_question">Ask your question</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="recently_asked">Recently Asked</string>
+    <string name="register_via_email">register via email</string>
+    <string name="iit_womens_dat">IIT Women\'s Day</string>
+    <string name="networking_events">Networking Events</string>
+    <string name="enter_question">Please enter your question.</string>
+    <string name="success_msg">Nasscom GDC 2015</string>
+    <string name="err_msg">Nasscom GDC 2015</string>
+    <string name="quickblox_err">Cannot connect to server. Please try again.</string>
+    <string name="question_post_success">Question posted successfully.</string>
+
+    <!--Networking fragment-->
+    <string name="lunch_networking">Lunch with a Luminary (Friday)</string>
+    <string name="lunch_da">Lunch with a Luminary (Saturday)</string>
+    <string name="breakfast_networking">BoF Breakfast</string>
+    <string name="batch_photo_title">Batch Photo</string>
+
+    <!--Sponsors Fragment-->
+    <string name="sponsors">Sponsors</string>
+
+    <!--Sponsor detail Fragment-->
+    <string name="view_site"><![CDATA[> Visit Website]]></string>
+    <string name="biodata">Biodata</string>
+
+    <!-- Information Screen-->
+    <string name="information">Information</string>
+    <string name="info_setting">Setting</string>
+    <string name="help_desk">Help Desk</string>
+    <string name="vanue_map">Venue Map</string>
+    <string name="attendee_heat_map">Attendee Heat Map</string>
+    <string name="official_conference_hotel">Official Conference Hotel</string>
+    <string name="about_kellton">About Kellton Tech</string>
+    <string name="ibeacon_proximity_notification">iBeacon Proximity Notification</string>
+    <string name="privacy_setting">Allow others to see my participation</string>
+
+
+    <!--AttendeeProfile screen-->
+    <string name="attendee">Profile</string>
+    <string name="experience">Experience</string>
+    <string name="education">Education</string>
+    <string name="summary">Summary</string>
+    <string name="whoami">Who am I</string>
+    <string name="interestedin">Interested in</string>
+    <string name="more_attendee">more...</string>
+
+    <!--Google Analytics Message -->
+    <string name="register_via_email1">Register Via Email</string>
+    <string name="login_via_linkedin">Login Via Linkedin</string>
+    <string name="submit_otp_code">Submit Otp Code</string>
+    <string name="iitglc_registration">Nasscom GDC Registration</string>
+    <string name="already_registered">Already Registered.</string>
+    <string name="skip_registration">Skip Registration</string>
+    <string name="event_list">Event List</string>
+    <string name="special_event_list">Special Event List</string>
+    <string name="program_list">Program List</string>
+    <string name="speakers_list">Speakers List</string>
+    <string name="sponsors_list">Sponsers List</string>
+    <string name="chat">Chat</string>
+    <string name="event_title">Event Title</string>
+    <string name="sponsor_name">Sponsor Name</string>
+
+    <!--Participation Fragment-->
+    <string name="participation">Participations</string>
+
+    <!--QuickBloxChat Fragment-->
+    <string name="send">Send</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!--BuzzFragment-->
+    <string name="buzz_title">Buzz</string>
+
+    <!--ChatUserListFragment-->
+    <string name="messages">Messages</string>
+
+    <!--Connect Fragment-->
+    <string name="batch">Batch</string>
+    <string name="branch">Branch</string>
+    <string name="campus">Campus</string>
+    <string name="degree">Degree</string>
+    <string name="search_attendee">Search Attendee</string>
+    <string name="filter_attendee">Filter Attendee</string>
+    <string name="search_top_text">Enter any text to search list of attendees of your interest.</string><!-- Enter any text, use one/multiple filters or apply both to search list of attendees of your interest. -->
+    <string name="and_text">and / or</string>
+
+    <string name="unable_post">Unable to Post.</string>
+    <string name="post_success">Successfully shared with </string>
+    <string name="post_success_twitter">Successfully shared with Twitter.</string>
+    <string name="post_success_linkedin">Successfully shared with Linkedin.</string>
+    <string name="post_success_facebook">Successfully shared with Facebook.</string>
+    <string name="post_success_gplus">Successfully shared with Google+.</string>
+
+    <!-- My Profile Fragment -->
+    <string name="long_content">
+        Android powers hundreds of millions of mobile devices \n
+        in more than 190 countries around the world. \n
+        It\'s the largest installed base of any mobile \n
+        platform and growing fast—every day another million \n
+        users power up their Android devices for the first time \n
+        and start looking for apps, games, and other digital content. \n
+        Android gives you a world-class platform for creating apps and \n
+        games for Android users everywhere, as well as an open marketplace \n
+        for distributing to them instantly.</string>
+    <string name="mp_user_name">User Name</string>
+    <string name="mp_education">Education</string>
+    <string name="mp_interested_in">Interested in</string>
+    <string name="mp_summary">Summary</string>
+    <string name="mp_who_am_i">Who am I</string>
+    <string name="mp_experience">Experience</string>
+    <string name="mp_edit_profile">Edit Profile</string>
+    <string name="mp_alumni_information">Alumni Information</string>
+
+    <string name="registered_date_mismatch">You have not registered for this date. Please contact Nasscom GDC help desk if you want to attend this event.</string>
+    <string name="no_speaker_registered">No speaker registered for this event.</string>
+    <string name="no_attendee_registered">No attendee registered for this event.</string>
+    <string name="update_via_linkedin">Update from Linkedin Profile</string>
+    <string name="update_via_iitglc">Update from Nasscom GDC Data</string>
+
+
+    <!-- Information Fragment -->
+    <string name="venue_map_title">Venue Map</string>
+    <string name="attendee_heat_map_message">This feature will be enabled at the day of conference.</string>
+    <string name="about_nasscom_title">About Nasscom GDC</string>
+    <string name="about_kelltontech_title">About Kellton Tech</string>
+    <string name="kelltontech">Kellton Tech</string>
+    <string name="zero">0</string>
+    <string name="my_events">My Events</string>
+    <string name="asteric">*</string>
+    <string name="looking_for">Looking for</string>
+    <string name="edit_profile_hint_1">Investment, VC, Co-Founder</string>
+    <string name="edit_profile_hint_2">Entrepreneur, Investor</string>
+    <string name="who_i_am">Who I am</string>
+    <string name="save">Save</string>
+    <string name="campus_edit_profile">Campus</string>
+    <string name="branch_connect">Branch</string>
+    <string name="batch_connect">Batch</string>
+    <string name="degree_connect">Degree</string>
+    <string name="reset_all">Reset All</string>
+    <string name="done">Done</string>
+    <string name="hunt_title">Scavenger Hunt - by Kellton Tech</string>
+    <string name="name_hunt">Name</string>
+    <string name="first_prize">1st Prize</string>
+    <string name="second_prize">2nd Prize</string>
+    <string name="third_prize">3rd Prize</string>
+    <string name="time_hunt">Time</string>
+    <!-- <string name="gcmSenderId">158321027277</string> -->
+    <string name="gcmSenderId">997148654356</string>
+    <string name="i_am_there">I\'m there</string>
+    <string name="beacon_mismatch">You are not at  correct location.</string>
+    <string name="beacon_match">Beacon Matched.</string>
+    <string name="please_enter_data">Please enter data in all fields.</string>
+    <string name="networking_event_iit_reg_screen_text">Your Nasscom GDC registration details are required to Enroll for this event. Please enter Email id used at the time of Nasscom GDC registration to access details.</string>
+    <string name="profile_iit_reg_screen_text">To enable all networking features we need your Nasscom GDC registration details. Please enter Email id used at the time of Nasscom GDC registration to access details.</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <!--<string name="facebook_app_id">718823828228004</string> --> <!-- Joginder -->
+    <string name="facebook_app_id">1639726152976196</string>
+    <!-- KelltonUser01@gmail.com -->
+    <string name="do_not_show">Do not show this message again</string>
+    <string name="no_record_found">No record found.</string>
+
+    <string name="beacon_dialog">beacondialog</string>
+    <string name="store_manager">Store manager</string>
+    <string name="sales_executive">Sales Executive</string>
+    <string name="user">User</string>
+
+</resources>
