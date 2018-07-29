@@ -1,2 +1,2 @@
-include ':app', ':androidbaseframework'
-project(':androidbaseframework').projectDir = new File('androidbaseframework')
+include ':app', ':geekandroidframework'
+project(':geekandroidframework').projectDir = new File('geekandroidframework')
