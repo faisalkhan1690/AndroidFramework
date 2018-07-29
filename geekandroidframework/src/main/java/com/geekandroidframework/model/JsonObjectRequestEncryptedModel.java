@@ -5,13 +5,6 @@ import com.geekandroidframework.volley.ext.IEncryption;
 
 import java.util.Map;
 
-/**
- * Model clas to keep request model on which volley working
- * @param <T> request class type
- *
- * @author Faisal khan
- */
-
 public class JsonObjectRequestEncryptedModel<T>  {
     public String url;
     public Map<String, String> mRequestHeaders;

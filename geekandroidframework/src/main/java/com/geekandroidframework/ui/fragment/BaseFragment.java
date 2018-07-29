@@ -1,10 +1,3 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
 package com.geekandroidframework.ui.fragment;
 
 import android.support.v4.app.Fragment;
@@ -13,9 +6,6 @@ import android.support.v4.app.FragmentActivity;
 import com.geekandroidframework.ui.IScreen;
 import com.geekandroidframework.ui.activity.BaseActivity;
 
-/**
- * @author sachn.guta
- */
 public abstract class BaseFragment extends Fragment implements IScreen {
 
     /**
@@ -28,21 +18,4 @@ public abstract class BaseFragment extends Fragment implements IScreen {
         }
         return (BaseActivity) activity;
     }
-
-//	/**
-//	 * @param serviceResponse
-//	 */
-//	@Override
-//	public void handleUiUpdate(final boolean status,final int action, final Object serviceResponse){
-//		final BaseActivity baseActivity = getBaseActivity();
-//		if (baseActivity == null) {
-//			return;
-//		}
-//		baseActivity.runOnUiThread(new Runnable() {
-//			@Override
-//			public void run() {
-//				baseActivity.updateUi(status,action,serviceResponse);
-//			}
-//		});
-//	}
 }

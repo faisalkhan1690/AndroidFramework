@@ -1,37 +1,12 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
-/**
- *
- */
 package com.geekandroidframework.ui;
 
-/**
- * int constants to be used as values for 1st parameter in
- * {@link IScreen#onEvent(int, Object)}
- *
- * @author sachin.gupta
- * @deprecated
- */
-
 public interface Events {
-    /**
-     * int constants for framework dialogs/events
-     */
     int DATE_PICKER_DIALOG = 1;
     int PHOTO_OPTIONS_DIALOG = 2;
     int EVENT_PHOTO_REMOVED = 3;
     int REQUEST_FACEBOOK_USER = 4;
     int APP_RATER_DIALOG = 5;
     int CUSTOM_ALERT_POSITIVE_BUTTON = 6;
-
-    /**
-     * int constants for project dialog/events
-     */
     int USER_REGISTER_DIALOG = 101;
     int RESEND_VERIF_CODE_DIALOG = 102;
     int LOCATION_IS_OFF_DIALOG = 103;

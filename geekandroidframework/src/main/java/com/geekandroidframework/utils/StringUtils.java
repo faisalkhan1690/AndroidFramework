@@ -1,28 +1,11 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
 package com.geekandroidframework.utils;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-import java.net.URLDecoder;
+import android.util.Log;
+
 import java.util.Collection;
 import java.util.regex.Pattern;
 
-import android.content.Context;
-import android.os.Environment;
-import android.util.Log;
 
-/**
- * Utility class useful when dealing with string objects. This class is a
- * collection of static functions it is not allowed to create instances of this
- * class
- */
 public abstract class StringUtils {
 
     private static final String LOG_TAG = "StringUtils";
@@ -34,21 +17,10 @@ public abstract class StringUtils {
    //public static final String EMAIL_REGEX = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\\\.[A-Za-z]{2,4}";
 
 
-    /**
-     * @param pStr String object to be tested.
-     * @returns true if the given string is null or empty or contains spaces
-     * only.
-     */
     public static boolean isNullOrEmpty(final String pStr) {
         return pStr == null || pStr.trim().length() == 0 || pStr.trim().equalsIgnoreCase("null");
     }
 
-    /**
-     * @param pEmail
-     * @param pAllowBlank
-     * @return true if pEmail matches with {@link StringUtils#EMAIL_REGEX},
-     * false otherwise
-     */
     public static boolean isValidEmail(String pEmail, boolean pAllowBlank) {
         if (pAllowBlank && isNullOrEmpty(pEmail)) {
             return true;
@@ -73,12 +45,7 @@ public abstract class StringUtils {
             return localEmailVaild;
         }
     }
-    /**
-     * @param pStr
-     * @param pStartIndex or -1 to parse from complete pStr
-     * @param pEndIndex
-     * @return int value, parsed from pStr or a substring of pStr
-     */
+
     public static int parseInt(String pStr, int pStartIndex, int pEndIndex) {
         if (pStr == null) {
             return 0;
@@ -95,12 +62,7 @@ public abstract class StringUtils {
         }
     }
 
-    /**
-     * This method checks and ensure http/https protocol in URL
-     *
-     * @param url
-     * @return formattedUrl
-     */
+
     public static String getFormattedURL(String url) {
         if (url.indexOf("http://") == 0 || url.indexOf("https://") == 0) {
             return url;
@@ -163,43 +125,11 @@ public abstract class StringUtils {
         }
         return true;
     }
-//
-//    /**
-//     * @param pEncodedString
-//     * @param pIsUrlEncoding
-//     * @return
-//     */
-//    public static String decode(String pEncodedString, String pCharsetName, boolean pIsUrlEncoding) {
-//        try {
-//            if (pIsUrlEncoding) {
-//                return URLDecoder.decode(pEncodedString, pCharsetName);
-//            } else {
-//                return new String(pEncodedString.getBytes(), pCharsetName);
-//            }
-//        } catch (Exception e) {
-//            return "";
-//        }
-//    }
 
-    /**
-     * return formated float as 232.00000000 should be 232, 0.180000000001
-     * should be 0.18
-     *
-     * @param pInputFloat
-     * @return
-     */
     public static String getFormatDecimalAmount(float pInputFloat) {
         return getFormatDecimalAmount(pInputFloat, 2);
     }
 
-    /**
-     * return formated float as 232.00000000 should be 232, 0.180000000001
-     * should be 0.18
-     *
-     * @param pInputFloat
-     * @param pNeededDigitsAfterDecimal
-     * @return
-     */
     public static String getFormatDecimalAmount(float pInputFloat, int pNeededDigitsAfterDecimal) {
         if (pInputFloat == (int) pInputFloat || pNeededDigitsAfterDecimal <= 0) {
             return String.format("%d", (int) pInputFloat);

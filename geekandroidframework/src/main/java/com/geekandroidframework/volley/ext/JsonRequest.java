@@ -1,10 +1,3 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
 package com.geekandroidframework.volley.ext;
 
 import android.util.Log;
@@ -15,39 +8,21 @@ import com.android.volley.Response.ErrorListener;
 import com.android.volley.VolleyLog;
 import com.geekandroidframework.application.BaseApplication;
 
-import org.json.JSONObject;
-
 import java.io.UnsupportedEncodingException;
 import java.util.Collections;
 import java.util.Map;
 
-/**
- * A request for retrieving a {@link JSONObject} response body at a given URL, allowing for an
- * optional {@link JSONObject} to be passed in as part of the request body.
- */
 public abstract class JsonRequest<T> extends Request<T> {
 
-    /**
-     * Charset for request.
-     */
     private static final String PROTOCOL_CHARSET = "utf-8";
-
-    /**
-     * Content type for request.
-     */
     private static final String PROTOCOL_CONTENT_TYPE =
             String.format("application/json; charset=%s", PROTOCOL_CHARSET);
 
     private final String mRequestBody;
 
-    /**
-     * Request headers.
-     */
     protected Map<String, String> mRequestHeaders;
 
     private Priority mPriority;
-
-//    protected NetworkResponse mResponse;
 
     public JsonRequest(String url, String jsonPayload, ErrorListener errorListener) {
         this(url, Collections.<String, String>emptyMap(), jsonPayload, errorListener);
@@ -63,8 +38,6 @@ public abstract class JsonRequest<T> extends Request<T> {
         this.mRequestBody = jsonPayload;
         this.mRequestHeaders = mRequestHeaders;
 
-        //LoggerUtil.e("Requestheader",mRequestHeaders.toString());
-        //LoggerUtil.e("RequestBody",mRequestBody);
         if(BaseApplication.IS_LOG_ENABLE){
             if(mRequestBody!=null){
                 Log.e("RequestBody",mRequestBody);

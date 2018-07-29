@@ -4,7 +4,6 @@ import android.util.Log;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.google.gson.Gson;
 import com.geekandroidframework.application.BaseApplication;
 import com.geekandroidframework.model.BaseModelCM;
 import com.geekandroidframework.model.CmVolleyError;
@@ -13,16 +12,9 @@ import com.geekandroidframework.model.EncryptionModelResponse;
 import com.geekandroidframework.model.JsonObjectRequestEncryptedModel;
 import com.geekandroidframework.utils.EncryptionUtils;
 import com.geekandroidframework.utils.StringUtils;
+import com.google.gson.Gson;
 
 import java.util.Map;
-
-/**
- * <h1><font color="orange">JsonObjectRequestEncrypted</font></h1>
- * Implementation class of GsonObjectRequest.
- * Use this class in case you want to send your data in the encrypted form. else use JsonObjectRequest class.
- *
- * @author Faisal Khan
- */
 
 
 public class JsonObjectRequestEncrypted<T> extends GsonObjectRequest<T> {

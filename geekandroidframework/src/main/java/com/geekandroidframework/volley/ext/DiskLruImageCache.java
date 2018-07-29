@@ -1,11 +1,13 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
 package com.geekandroidframework.volley.ext;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.Bitmap.CompressFormat;
+import android.graphics.BitmapFactory;
+import android.util.Log;
+
+import com.geekandroidframework.BuildConfig;
+import com.jakewharton.disklrucache.DiskLruCache;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -15,19 +17,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Bitmap.CompressFormat;
-import android.graphics.BitmapFactory;
-import android.util.Log;
-
-import com.jakewharton.disklrucache.DiskLruCache;
-import com.geekandroidframework.BuildConfig;
-
-/**
- * Implementation of DiskLruCache by Jake Wharton
- * modified from http://stackoverflow.com/questions/10185898/using-disklrucache-in-android-4-0-does-not-provide-for-opencache-method
- */
 public class DiskLruImageCache {
 
     private DiskLruCache mDiskCache;

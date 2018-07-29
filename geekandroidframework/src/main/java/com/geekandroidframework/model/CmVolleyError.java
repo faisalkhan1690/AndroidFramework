@@ -1,11 +1,7 @@
 package com.geekandroidframework.model;
 
 import com.android.volley.VolleyError;
-import com.geekandroidframework.model.JsonObjectRequestEncryptedModel;
 
-/**
- * Custom volley error for club  mahindra
- */
 public class CmVolleyError extends VolleyError {
     public int mStatus;
     public int mResponseCode;

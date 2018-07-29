@@ -1,10 +1,3 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
 package com.geekandroidframework.ui.activity;
 
 import android.app.Application;
@@ -13,27 +6,19 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
-import android.support.v4.content.LocalBroadcastManager;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
-import android.widget.EditText;
 
 import com.geekandroidframework.BuildConfig;
 import com.geekandroidframework.R;
 import com.geekandroidframework.application.BaseApplication;
 import com.geekandroidframework.ui.IScreen;
-import com.geekandroidframework.utils.KeypadUtils;
 
 
-/**
- * This class is used as base-class for application-base-activity.
- */
 public abstract class BaseActivity extends AppCompatActivity implements IScreen {
 
     private String LOG_TAG = getClass().getSimpleName();
@@ -134,112 +119,6 @@ public abstract class BaseActivity extends AppCompatActivity implements IScreen 
      */
     public abstract void updateUi(final boolean status, final int action, final Object serviceResponse);
 
-    // ////////////////////////////// show and hide ProgressDialog
-
-//    private ProgressDialog mProgressDialog;
-//
-//    /**
-//     * Shows a simple native progress dialog<br/>
-//     * Subclass can override below two methods for custom dialogs- <br/>
-//     * 1. showProgressDialog <br/>
-//     * 2. removeProgressDialog
-//     *
-//     * @param bodyText
-//     */
-//    public void showProgressDialog(String bodyText) {
-//        if (isFinishing()) {
-//            return;
-//        }
-//        if (mProgressDialog == null) {
-//            mProgressDialog = new ProgressDialog(BaseActivity.this);
-//            mProgressDialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-//            mProgressDialog.setCancelable(false);
-//            mProgressDialog.setOnKeyListener(new Dialog.OnKeyListener() {
-//                @Override
-//                public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event) {
-//                    if (keyCode == KeyEvent.KEYCODE_CAMERA || keyCode == KeyEvent.KEYCODE_SEARCH) {
-//                        return true; //
-//                    }
-//                    return false;
-//                }
-//            });
-//        }
-//
-//        mProgressDialog.setMessage(bodyText);
-//
-//        if (!mProgressDialog.isShowing()) {
-//            mProgressDialog.show();
-//        }
-//    }
-//
-//    /**
-//     * Removes the simple native progress dialog shown via showProgressDialog <br/>
-//     * Subclass can override below two methods for custom dialogs- <br/>
-//     * 1. showProgressDialog <br/>
-//     * 2. removeProgressDialog
-//     */
-//    public void removeProgressDialog() {
-//        try {
-//            if (mProgressDialog != null && mProgressDialog.isShowing()) {
-//                mProgressDialog.dismiss();
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//
-//    }
-//
-//
-//
-//    public void setProgressDialog(ProgressDialog dialog) {
-//        this.mProgressDialog = dialog;
-//    }
-    // ////////////////////////////// show and hide key-board
-
-
-//    private PopupWindow mPpoPopupWindow;
-//
-//    private void popupProgressInit() {
-//        mPpoPopupWindow= OtherUtill.showProgressDialog(this);
-//    }
-//
-//    public void showProgressDialog(String message) {
-//        if (isFinishing()) {
-//            return;
-//        }
-//        if (mPpoPopupWindow == null) {
-//           popupProgressInit();
-//        }
-//
-//        if (!mPpoPopupWindow.isShowing()) {
-//            mPpoPopupWindow.showAtLocation(getWindow().getDecorView().getRootView(),Gravity.CENTER,0,0);
-//        }
-//    }
-//
-//    /**
-//     * Removes the simple native progress dialog shown via showProgressDialog <br/>
-//     * Subclass can override below two methods for custom dialogs- <br/>
-//     * 1. showProgressDialog <br/>
-//     * 2. removeProgressDialog
-//     */
-//    public void removeProgressDialog() {
-//        try {
-//            if (mPpoPopupWindow != null && mPpoPopupWindow.isShowing()) {
-//                mPpoPopupWindow.dismiss();
-//            }
-//        } catch (Exception e) {
-//
-//        }
-//
-//    }
-
-//    @Override
-//    public void onBackPressed() {
-//        if(mPpoPopupWindow==null || !mPpoPopupWindow.isShowing()){
-//            super.onBackPressed();
-//        }
-//    }
-
     private Dialog mDialog;
     private String mMessage = "";
 
@@ -260,9 +139,6 @@ public abstract class BaseActivity extends AppCompatActivity implements IScreen 
             webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
             webView.getSettings().setRenderPriority(WebSettings.RenderPriority.HIGH);
             webView.getSettings().setJavaScriptEnabled(true);
-//            webView.getSettings().setLoadWithOverviewMode(true);
-//            webView.getSettings().setUseWideViewPort(true);
-//            webView.getSettings().setSupportZoom(false);
             webView.setBackgroundColor(0);
             webView.setWebViewClient(new WebViewClient());
             webView.loadDataWithBaseURL("file:///android_asset/", "<!DOCTYPE html>\n" +
@@ -447,32 +323,4 @@ public abstract class BaseActivity extends AppCompatActivity implements IScreen 
         }
 
     }
-
-    @Override
-    public boolean dispatchTouchEvent(MotionEvent event) {
-
-        try {
-            View v = getCurrentFocus();
-            boolean ret = super.dispatchTouchEvent(event);
-
-            if (v instanceof EditText) {
-                View w = getCurrentFocus();
-                int scrcoords[] = new int[2];
-                w.getLocationOnScreen(scrcoords);
-                float x = event.getRawX() + w.getLeft() - scrcoords[0];
-                float y = event.getRawY() + w.getTop() - scrcoords[1];
-
-                if (event.getAction() == MotionEvent.ACTION_UP && (x < w.getLeft() || x >= w.getRight() || y < w.getTop() || y > w.getBottom())) {
-                    KeypadUtils.hideSoftKeypad(this);
-                }
-            }
-            return ret;
-        } catch (Exception e) {
-            e.printStackTrace();
-            return true;
-        }
-
-    }
-
-
 }

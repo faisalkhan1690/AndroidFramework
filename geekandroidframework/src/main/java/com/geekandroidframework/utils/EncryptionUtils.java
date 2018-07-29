@@ -13,13 +13,6 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-/**
- *
- * <h1><font color="orange">EncryptionUtils</font></h1>
- * This class hold encryption related methods
- *
- * @author Faisal Khan
- */
 public class EncryptionUtils {
 
     /**

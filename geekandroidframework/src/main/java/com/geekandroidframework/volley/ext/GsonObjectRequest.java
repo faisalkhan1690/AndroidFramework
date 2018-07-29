@@ -1,10 +1,3 @@
-/*
- *
- *  Proprietary and confidential. Property of Kellton Tech Solutions Ltd. Do not disclose or distribute.
- *  You must have written permission from Kellton Tech Solutions Ltd. to use this code.
- *
- */
-
 package com.geekandroidframework.volley.ext;
 
 import android.util.Log;
@@ -14,9 +7,9 @@ import com.android.volley.ParseError;
 import com.android.volley.Response;
 import com.android.volley.Response.ErrorListener;
 import com.android.volley.toolbox.HttpHeaderParser;
+import com.geekandroidframework.application.BaseApplication;
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
-import com.geekandroidframework.application.BaseApplication;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -26,59 +19,27 @@ import java.io.UnsupportedEncodingException;
 import java.util.Map;
 import java.util.zip.GZIPInputStream;
 
-/**
- * @author Vijay.Kumar
- */
 public abstract class GsonObjectRequest<T> extends JsonRequest<T> {
     private final Gson mGson;
     private final Class<T> mClazz;
     private boolean headerEncoding;
     private static final String TAG = "GsonObjectRequest";
 
-    /***
-     * Simple Request
-     * @param url
-     * @param jsonPayload
-     * @param clazz
-     * @param errorListener
-     */
     public GsonObjectRequest(String url, String jsonPayload, Class<T> clazz, ErrorListener errorListener) {
         this(url, null, jsonPayload, clazz, errorListener);
     }
 
-    /***
-     * Request with header
-     * @param url
-     * @param mRequestHeaders
-     * @param jsonPayload
-     * @param clazz
-     * @param errorListener
-     */
+
     public GsonObjectRequest(String url, Map<String, String> mRequestHeaders, String jsonPayload, Class<T> clazz, ErrorListener errorListener) {
         this(url, mRequestHeaders, jsonPayload, clazz, errorListener, new Gson());
     }
 
-    /***
-     * * Request with custom GSON object
-     * @param url
-     * @param jsonPayload
-     * @param clazz
-     * @param errorListener
-     * @param gson
-     */
+
     public GsonObjectRequest(String url, String jsonPayload, Class<T> clazz, ErrorListener errorListener, Gson gson) {
         this(url, null, jsonPayload, clazz, errorListener, gson);
     }
 
-    /***
-     * Request With header and custom GSON object
-     * @param url
-     * @param mRequestHeaders
-     * @param jsonPayload
-     * @param clazz
-     * @param errorListener
-     * @param gson
-     */
+
     public GsonObjectRequest(String url, Map<String, String> mRequestHeaders, String jsonPayload, Class<T> clazz, ErrorListener errorListener, Gson gson) {
         super(url, mRequestHeaders, jsonPayload, errorListener);
         this.mClazz = clazz;
@@ -86,16 +47,6 @@ public abstract class GsonObjectRequest<T> extends JsonRequest<T> {
         mGson = gson;
     }
 
-    /***
-     * For particular Method request
-     * @param method
-     * @param url
-     * @param mRequestHeaders
-     * @param jsonPayload
-     * @param clazz
-     * @param errorListener
-     * @param gson
-     */
     public GsonObjectRequest(int method, String url, Map<String, String> mRequestHeaders, String jsonPayload, Class<T> clazz, ErrorListener errorListener, Gson gson) {
         super(method, url, mRequestHeaders, jsonPayload, errorListener);
         this.mClazz = clazz;
@@ -103,15 +54,7 @@ public abstract class GsonObjectRequest<T> extends JsonRequest<T> {
         mGson = gson;
     }
 
-    /***
-     * For Gzip request
-     * @param url
-     * @param mRequestHeaders
-     * @param jsonPayload
-     * @param clazz
-     * @param errorListener
-     * @param headerEncoding
-     */
+
     public GsonObjectRequest(String url, Map<String, String> mRequestHeaders, String jsonPayload, Class<T> clazz, ErrorListener errorListener,boolean headerEncoding) {
         super(url, mRequestHeaders, jsonPayload, errorListener);
         this.mClazz = clazz;
@@ -138,13 +81,9 @@ public abstract class GsonObjectRequest<T> extends JsonRequest<T> {
             return Response.error(new ParseError(e));
         } catch (JsonSyntaxException e) {
             return Response.error(new ParseError(e));
-        }finally {
-           // EmailRecepetResponse ob=mGson.fromJson(json, EmailRecepetResponse.class);
-            //LoggerUtil.e("finaly",""+ob.getSendOrderEmailResult());
         }
     }
     private String handleGzipResponse(NetworkResponse response) {
-//        String output = "";
         StringBuilder output=new StringBuilder();
         try {
             GZIPInputStream gStream = new GZIPInputStream(new ByteArrayInputStream(response.data));
